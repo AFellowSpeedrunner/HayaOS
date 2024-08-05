@@ -1,0 +1,1 @@
+os.run(_ENV, "/sys/programs/shell.lua")

@@ -1,0 +1,1 @@
+txt = ((shell.dir():gsub(0,1) == "/" and not (shell.dir():gsub(0,1) == "" or shell.dir():gsub(0,1)) and "" or "/")..shell.dir()..(shell.dir():gsub(shell.dir():len()-1,shell.dir():len()) == "/" and "" or "/")); print(txt == "//" and "/" or txt);
