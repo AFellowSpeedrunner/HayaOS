@@ -29,7 +29,7 @@ term.clear()
 
 if not term.isColor() then
 	print("HayaOS does not support standard computers")
-	print("Install on a colored computer instead...")
+	print("Please install HayaOS on a colored computer instead.")
 	while true do os.pullEventRaw() end
 end
 
@@ -228,10 +228,6 @@ local r_success, r_err = pcall(function()
 	term.setTextColor(colors.purple)
 	playSound("startup")
 	print("")
-	print("Hi master! :3")
-	print("What should we do together?")
-	print("-HayaOS")
-	print("")
 	term.setTextColor(colors.white)
 
 	if settings.get("motd.enable") then
@@ -247,8 +243,6 @@ else
 	term.setBackgroundColor(colors.black)
 	term.setCursorPos(1,1)
 	term.clear()
-	log("sys", "System exited with no errors. Now entering into developer LUA module...")
-	os.run(_ENV, "/sys/programs/lua.lua")
-	log("sys", "Lua program exited. Shutting down...")
+	log("sys", "System exited with no errors. Powering off...")
 	os.shutdown()
 end

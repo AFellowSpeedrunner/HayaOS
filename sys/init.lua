@@ -5,7 +5,7 @@
 -- Modified for HayaOS
 
 --// replace old function to make way for kernel ===KERNEL VERSION ALWAYS HERE===
-local hayaVersion = "0.0.3D"
+local hayaVersion = "0.0.4D"
 _G["os"]["version"] = function()
 	return "HayaOS v"..hayaVersion
 end

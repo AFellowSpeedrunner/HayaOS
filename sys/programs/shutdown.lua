@@ -36,13 +36,7 @@ if term.isColour() then
     term.setTextColour(colours.purple)
 end
 
-print("")
-slowPrint("Goodbye... my friend...", 18, 5)
-slowPrint("Hopefully I see you again master...", 18, 10)
-print("")
-sleep(2)
-print(" :3 -HayaOS")
-print("")
+print("Shutting down...")
 term.setTextColour(colours.white)
 sleep(3)
 os.shutdown()
